@@ -1,6 +1,5 @@
-index.html
-# Rfx_studio-
-<!DOCTYPE html>
+
+# Rfx studio
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -188,8 +187,7 @@ ul{
 <section class="hero reveal">
 
   <div class="profile">
-    <img id="profilePic" src="rfx-logo.jpg">
-    <input type="file" id="upload" class="upload">
+    <img src="rfx-logo.jpg" class="profile-pic">
   </div>
 
   <h1>RAHUL</h1>
@@ -200,7 +198,8 @@ ul{
     reels, motion graphics and storytelling.
   </p>
 
-</section>
+</section><img width="1440" height="1440" alt="rfx-logo" src="https://github.com/user-attachments/assets/86efca7e-9d58-4e57-bf86-0994ee6b2c0f" />
+
 
 <!-- ABOUT -->
 <section id="about" class="card reveal">
