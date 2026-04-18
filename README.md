@@ -1,5 +1,4 @@
-
-# Rfx studio
+#Rfx Studio 
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -11,6 +10,7 @@
 
 <style>
 
+/* RESET */
 *{
   margin:0;
   padding:0;
@@ -19,7 +19,7 @@
 }
 
 body{
-  background: radial-gradient(circle at top,#1a0f2e,#0f0a1f 80%);
+  background: linear-gradient(135deg,#0f0a1f,#1a0f2e,#2a1450);
   color:white;
   scroll-behavior:smooth;
 }
@@ -32,20 +32,18 @@ header{
   justify-content:space-between;
   padding:20px;
   backdrop-filter:blur(10px);
-  z-index:100;
 }
 
 .logo{
+  font-size:22px;
   font-weight:700;
-  font-size:24px;
   color:#c084fc;
 }
 
 nav a{
   margin-left:20px;
   text-decoration:none;
-  color:#bbb;
-  transition:0.3s;
+  color:#ccc;
 }
 
 nav a:hover{
@@ -55,41 +53,29 @@ nav a:hover{
 /* HERO */
 .hero{
   text-align:center;
-  padding:70px 20px;
+  padding:80px 20px;
 }
 
-/* PROFILE */
-.profile{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
-
-.profile img{
-  width:160px;
-  height:160px;
+/* PROFILE IMAGE */
+.profile-pic{
+  width:140px;
+  height:140px;
   border-radius:50%;
-  object-fit:cover;
+  object-fit:contain;
+  background:#1a0f2e;
   border:3px solid #c084fc;
-  box-shadow:0 0 40px #a855f7;
-  background:black;
+  box-shadow:0 0 30px #a855f7;
   transition:0.3s;
 }
 
-.profile img:hover{
-  transform:scale(1.05);
-}
-
-/* Upload */
-.upload{
-  margin-top:10px;
-  color:#c084fc;
+.profile-pic:hover{
+  transform:scale(1.1);
 }
 
 /* TEXT */
 h1{
+  font-size:40px;
   margin-top:20px;
-  font-size:38px;
 }
 
 .tag{
@@ -98,7 +84,7 @@ h1{
 }
 
 .desc{
-  max-width:550px;
+  max-width:500px;
   margin:auto;
   color:#bbb;
 }
@@ -110,19 +96,7 @@ h1{
   border-radius:20px;
   background:rgba(255,255,255,0.05);
   backdrop-filter:blur(12px);
-  box-shadow:0 0 25px rgba(168,85,247,0.2);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-}
-
-/* LIST */
-ul{
-  margin-top:10px;
-  padding-left:20px;
-  color:#ccc;
+  box-shadow:0 0 20px rgba(168,85,247,0.2);
 }
 
 /* SKILLS */
@@ -134,7 +108,6 @@ ul{
   height:8px;
   background:#222;
   border-radius:10px;
-  overflow:hidden;
 }
 
 .bar span{
@@ -154,6 +127,10 @@ ul{
   color:white;
   margin-top:15px;
   box-shadow:0 0 20px #a855f7;
+}
+
+.btn:hover{
+  transform:scale(1.05);
 }
 
 /* ANIMATION */
@@ -178,7 +155,6 @@ ul{
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -186,9 +162,8 @@ ul{
 <!-- HERO -->
 <section class="hero reveal">
 
-  <div class="profile">
-    <img src="rfx-logo.jpg" class="profile-pic">
-  </div>
+  <!-- PROFILE PHOTO -->
+  <img src="rfx-logo.jpg" class="profile-pic">
 
   <h1>RAHUL</h1>
   <p class="tag">🎬 Video Editor | Motion Designer</p>
@@ -198,8 +173,7 @@ ul{
     reels, motion graphics and storytelling.
   </p>
 
-</section><img width="1440" height="1440" alt="rfx-logo" src="https://github.com/user-attachments/assets/86efca7e-9d58-4e57-bf86-0994ee6b2c0f" />
-
+</section>
 
 <!-- ABOUT -->
 <section id="about" class="card reveal">
@@ -207,71 +181,28 @@ ul{
   <p>📍 Bengaluru, India</p>
   <p>📞 9900809042</p>
   <p>✉️ rahulxeditzrahulxeditz@gmail.com</p>
-
-  <h3 style="margin-top:15px;">Education</h3>
-  <p>2nd PUC (Currently Pursuing)</p>
-
-  <h3 style="margin-top:15px;">Objective</h3>
-  <p>
-    Looking to apply strong editing, motion graphics, and storytelling skills
-    in freelance or part-time opportunities.
-  </p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="card reveal">
+
   <h2>Skills</h2>
 
   <div class="skill">
     <p>Video Editing</p>
-    <div class="bar"><span data-width="95%"></span></div>
-  </div>
-
-  <div class="skill">
-    <p>Motion Graphics</p>
     <div class="bar"><span data-width="90%"></span></div>
   </div>
 
   <div class="skill">
-    <p>Color Grading</p>
+    <p>Motion Graphics</p>
     <div class="bar"><span data-width="85%"></span></div>
   </div>
 
   <div class="skill">
-    <p>Photography</p>
-    <div class="bar"><span data-width="70%"></span></div>
+    <p>Color Grading</p>
+    <div class="bar"><span data-width="80%"></span></div>
   </div>
 
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="card reveal">
-  <h2>Projects</h2>
-  <ul>
-    <li>Cinematic Instagram Reels</li>
-    <li>Podcast Editing</li>
-    <li>Creative Typography Edits</li>
-  </ul>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="card reveal">
-  <h2>Experience</h2>
-  <p>Freelance Video Editor – 2 Years</p>
-  <ul>
-    <li>Cinematic reels editing</li>
-    <li>High-retention content</li>
-    <li>Motion blur & transitions</li>
-  </ul>
-</section>
-
-<!-- TOOLS -->
-<section class="card reveal">
-  <h2>Tools</h2>
-  <ul>
-    <li>Alight Motion (2+ years)</li>
-    <li>Node Video (2+ years)</li>
-  </ul>
 </section>
 
 <!-- CONTACT -->
@@ -304,18 +235,6 @@ window.addEventListener("scroll",()=>{
       bar.style.width=bar.dataset.width;
     }
   });
-});
-
-/* IMAGE UPLOAD PREVIEW */
-document.getElementById("upload").addEventListener("change",function(e){
-  const file=e.target.files[0];
-  if(file){
-    const reader=new FileReader();
-    reader.onload=function(){
-      document.getElementById("profilePic").src=reader.result;
-    }
-    reader.readAsDataURL(file);
-  }
 });
 
 </script>
